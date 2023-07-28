@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <title>Build Form using HTML</title>
+    <style>
+         /* styling the Body element i.e Color,Font, Alignment */
+ body {
+    background-color: rgb(129, 37, 214) ;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align : center
+}
+
+/* styling the form (color, padding, shadow?) */
+body {
+    max-width: 500px;
+    margin: 50px ;
+    padding: 20px 30px;
+    box-shadow: 2px 5px 10px hsl(0, 42%, 47%)
+}
+
+/* styling form-control Class */
+.form-control label {
+     display: block;
+    margin-bottom: 10px; 
+    
+}
+
+/* Styling form-control input, selsect, textarea */
+.form-control input, 
+.form-control select,
+.form-control textarea {
+    border: 1px solid #777;
+    border-radius: 5px;
+    font-family: inherit;
+    padding: 10px;
+    display: block;
+    width: 95%;
+}
+
+/* Styling form-control Radio button and Checkbox */
+.form-control input [type="radio"],
+.form-control input [type="checkbox"]{
+    display: inline-block;
+    width: auto;
+}
+
+/* Styling button */
+button {
+    background-color: rgb(13, 204, 22) ;
+    border: 1px solid #727171;
+    border-radius: 5px;
+    font-family: inherit;
+    font-size: 21px;
+    display: block;
+    width: 100%;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+    </style>
+</head>
+<body>
+    <h1>HTML Survey Form</h1>
+
+    <!--Create Form-->
+    <form id="form">
+
+        <!-- Details-->
+        <div class="form-control">
+            
+            <input type="text"    id="name"placeholder="Enter your name" />
+            
+        </div>
+
+            <!--Input Type Text-->
+            
+         
+
+        <div class="form-control">
+            <label for="Email" id="label-email">
+                Email
+            </label>
+
+            <!--Input Type Text-->
+            <input type="text"
+            id="Email"
+            placeholder="Enter your email"/>
+        </div>
+        <div class="form-control">
+            <label for="Age" id="label Age">
+                Age
+            </label>
+            <!--Input Type Text-->
+            <input type="text"
+            id="Age"
+            placeholder="Enter your Age"/>
+        </div>
+        <div class="form-control">
+            <label for="Role" id="label-role">
+                Which option best describes you?
+            </label>
+            <!--Dropdown options-->
+            <select namme="role" id="role">
+                <option value="student">Student</option>
+                <option value="intern">Intern</option>
+                <option value="professional">Professional</option>
+                <option value="other">Other</option>
+                </option>
+            </select>
+        </div>
+        <div class="form-control">
+            <label>
+                Would you recommend Tech Studio to a friend?
+            </label>
+
+            <!--Input Type Radio Button-->
+            <label for="recommed-1">
+                <input type="radio"
+                id="recommed-1"
+                name="recommed">Yes</input>
+            </label>
+            <label for="recommed-2">
+                <input type="radio"
+                id="recommed-2"
+                name="recommed-2">No</input>
+            </label>
+            <label for="recommed-3">
+                <input type="radio"
+                id="recommed-3"
+                name="recommed-3">Maybe</input>
+            </label>
+            <div class="form-control">
+                <label>(languages and Frameworks Known)
+                    <small>(check all that apply)</small>
+                </label>
+                <!--Input Type Checkbox-->
+                <label for="inp-1">
+                    <input type="checkbox"
+                           name="inp">C</input></label>   
+                <label for="inp-2">
+                    <input type="checkbox"
+                           name="inp">C++</input></label>          
+                <label for="inp-3">
+                    <input type="checkbox"
+                           name="inp">java</input></label>           
+                <label for="inp-4">
+                    <input type="checkbox"
+                           name="inp">Python</input></label>
+                <label for="inp-5">
+                    <input type="checkbox"
+                           name="inp">javascript</input></label>
+                <label for="inp-6">
+                    <input type="checkbox"
+                           name="inp">React</input></label>
+                <label for="inp-7">
+                    <input type="checkbox"
+                           name="inp">Angular</input></label>
+                <label for="inp-7">
+                    <input type="checkbox"
+                           name="inp">PHP</input></label>
+            <div class="form-control">
+                <label for="comment">
+                        Any comments or suggestions?
+                </label>
+                 
+            <!-- multi-line text input control -->
+            <div>
+                    <textarea name="comment" id="comment"
+                        placeholder="Enter your comment here"></textarea>
+            </div>
+                  
+            <!-- Multi-line Text Input Control -->
+                    <button type="submit" value="submit">
+                            Submit
+                    </button>
+                
+                                      
+
+
+            </div>
+                
+
+                
+
+    
+            </label>
+        </div>
+            
+        </div>
+    </form>
+    
+</body>
+</html>
